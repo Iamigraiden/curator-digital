@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+:root{
+  font-family: "Poppins", serif;
+}
+body {
+   /* font-family: "Poppins", serif!important; */
+   font-family: "Manrope", serif !important;
+   overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}

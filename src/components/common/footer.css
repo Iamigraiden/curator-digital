@@ -1,0 +1,26 @@
+.footer-comp{
+    padding-top: 5rem;
+    background-color: #1c1c1c;
+}
+.footer{
+    border-top:2px solid #678468 ;
+    padding-bottom:;
+}
+.footer-link ul{ 
+        list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer-link ul li{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+.footer-title{
+    color: #678468;
+}
+.places li{
+    font-size: 3.5rem !important;
+    font-weight: 600;
+}

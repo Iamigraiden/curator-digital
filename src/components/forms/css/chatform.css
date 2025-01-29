@@ -1,0 +1,39 @@
+/* Show sidebar when active */
+.sidebar.active {
+    right: 0; /* Show sidebar */
+}
+.Sidebar_overlay.active {
+    display: block; /* Show the overlay */
+}
+/* The sidepanel menu */
+.sidepanel {
+  position: relative;
+    height: 100vh; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1500; 
+    top: 0;
+    right: 0; 
+    overflow-x: hidden; 
+    transition: 0.5s; 
+  }
+  .slide-width{
+    width: 80%;
+  }
+  .form-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    width: 34%;
+  }
+  .closebtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  .form-back{
+    background-color: #ff491b;
+  }

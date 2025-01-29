@@ -1,0 +1,117 @@
+.navbar .navbar-nav .nav-link{
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 6px;
+
+  }
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+   color: #ff491b;
+}
+
+    .navbar-black{
+      /* box-shadow: inset 0px 95px 14px -41px rgba(0, 0, 0, 0.4); */
+      background-color: rgb(0, 0, 0);
+      transition: .5s ease-in-out;
+      /* animation: fadeInDown 1s both 0.2s; */
+  }
+  /* @keyframes fadeInDown{
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+} */
+  .navbar .navbar-nav .nav-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0 6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .navbar .navbar-nav .nav-link span{
+    display: block;
+    transition: .4s;
+  }
+  .navbar .navbar-nav .nav-link:hover span{
+   transform: translateY(-50px);
+   opacity: 0;
+  }
+  .navbar .navbar-nav .nav-link::before{
+    position: absolute;
+    content: "";
+    text-wrap: nowrap;
+    left: 50.5%;
+    transform: translate(-50%);
+    top: 20px;
+    opacity: 0;
+    transition: .4s;
+  }
+  .navbar .navbar-nav .nav-link.mission::before{
+    content: "homepage";
+  }
+  .navbar .navbar-nav .nav-link.services::before{
+    content: "our services";
+  }
+  .navbar .navbar-nav .nav-link.ourwork::before{
+    content: "our works";
+  }
+  .navbar .navbar-nav .nav-link.about::before{
+    content: "about us";
+  }
+  .navbar .navbar-nav .nav-link.careers::before{
+    content: "careers ";
+  }
+  .navbar .navbar-nav .nav-link.contact::before{
+    content: "contact us";
+  }
+  .navbar .navbar-nav .nav-link:hover::before{
+    top: 0;
+    opacity: 1;
+  }
+  /* rocket icon styling  */
+  .rocket{
+    position: relative;
+  }
+  .rocket::before{
+    content: "";
+    width: 0;
+    top: 5px;
+    height: 30px;
+    position: absolute;
+    background-color: #ff491b;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    z-index: -1;
+    left:7px;
+    visibility: hidden; 
+    
+  }
+  .rocket:hover::before{
+    width: 140px;
+   visibility: visible;
+   transition: .2s;
+  }
+  .launch-text{
+    position: absolute;
+    font-size: 13px;
+    padding: 6px;
+    visibility: hidden;
+  }
+  .rocket:hover .launch-text{
+    visibility:visible;
+    transition: .2s;
+  }
+  @media screen and (max-width:667px) and (min-width:375px){
+  .navbar .navbar-nav .nav-link {
+    margin: 10px 6px;
+  }
+  .navbar .navbar-nav .nav-link::before{
+    left: 0%;
+    transform: translate(0);}
+  }
